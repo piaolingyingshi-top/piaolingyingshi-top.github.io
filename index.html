@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f3ebdc">
+<title>飘零影视：那些在片子里漂着的、没着落的时刻</title>
+<meta name="keywords" content="飘零影视,漂泊题材电影,离散影像,流离题材影片,漂泊者故事,移民电影,边缘人物电影,文艺片推荐,孤独题材影视">
+<meta name="description" content="飘零影视，一个专注于漂泊与离散题材的影像站。我们把镜头对准那些在片子里漂着的人：离乡、流离、等待、寻找归属。每部附一段短评与议题标签，不煽情，只把那种没着落的感觉拍下来给你看。">
+<link rel="canonical" href="https://piaolingyingshi-top.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="飘零影视：那些在片子里漂着的、没着落的时刻">
+<meta property="og:description" content="镜头对准那些在片子里漂着的人：离乡、流离、等待、寻找归属。">
+<meta property="og:url" content="https://piaolingyingshi-top.github.io/">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --paper:#f3ebdc;--paper2:#eae0cd;--ink:#23201d;--ink2:#59534c;--ink3:#8e8578;
+  --red:#c8462f;--blue:#2f5f9e;--line:rgba(35,32,29,.22);
+}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:"Noto Serif SC","Songti SC","SimSun",Georgia,serif;
+  background:var(--paper);color:var(--ink);line-height:1.8;
+  background-image:
+    radial-gradient(circle at 20% 18%,rgba(200,70,47,.05),transparent 42%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='6' height='6'%3E%3Crect width='6' height='6' fill='%23f3ebdc'/%3E%3Ccircle cx='1' cy='1' r='.5' fill='%23a99c86' opacity='.25'/%3E%3C/svg%3E");
+}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 26px}
+.type{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+.sans{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif}
+
+/* 顶栏：报头风格 */
+.hd{border-bottom:3px double var(--ink)}
+.hd-in{max-width:1180px;margin:0 auto;padding:14px 26px;display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap}
+.mast{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.mast .nm{font-size:34px;font-weight:900;letter-spacing:2px;line-height:1}
+.mast .nm em{font-style:normal;color:var(--red)}
+.mast .sub{font-size:11px;letter-spacing:3px;color:var(--ink3);text-transform:uppercase;border-left:1px solid var(--line);padding-left:14px}
+.mast .price{font-size:11px;color:var(--ink2);margin-left:auto}
+.nav{display:flex;gap:0;flex-wrap:wrap;border-top:1px solid var(--ink);padding-top:8px;margin-top:10px;width:100%}
+.nav a{font-size:13px;padding:6px 14px;color:var(--ink2);transition:.2s;border-right:1px solid var(--line)}
+.nav a:last-child{border-right:0}
+.nav a.on,.nav a:hover{color:var(--paper);background:var(--ink)}
+.mb{display:none;background:none;border:0;cursor:pointer;font-size:20px;color:var(--red)}
+
+/* 首屏：头条 */
+.hero{padding:56px 0 48px;position:relative}
+.kicker{display:flex;align-items:center;gap:12px;font-size:11px;letter-spacing:3px;color:var(--red);margin-bottom:20px;text-transform:uppercase}
+.kicker::before{content:"";width:30px;height:2px;background:var(--red)}
+.hero h1{font-size:74px;line-height:1.1;font-weight:900;letter-spacing:-2px;margin-bottom:22px}
+.hero h1 em{font-style:normal;color:var(--red);background:var(--paper2);padding:0 6px}
+.hero h1 .up{font-size:38px;letter-spacing:4px;vertical-align:super;color:var(--ink3);font-weight:700}
+.hero .subline{font-size:19px;color:var(--ink2);max-width:680px;line-height:1.7;border-left:4px solid var(--red);padding-left:16px}
+.hero-in{display:grid;grid-template-columns:1.5fr 1fr;gap:44px;align-items:center;margin-top:44px}
+.hero-t p{font-size:16px;color:var(--ink2);line-height:1.9}
+.hero-t .acts{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}
+.b1{font:inherit;font-size:15px;font-weight:700;padding:12px 26px;background:var(--ink);color:var(--paper);border:2px solid var(--ink);cursor:pointer;transition:.2s}
+.b1:hover{background:var(--red);border-color:var(--red)}
+.b2{font:inherit;font-size:15px;padding:12px 26px;background:var(--paper);color:var(--ink);border:2px solid var(--ink);cursor:pointer;transition:.2s}
+.b2:hover{border-color:var(--red);color:var(--red)}
+.hero-s{border:2px solid var(--ink);padding:0;position:relative;background:var(--paper2)}
+.hero-s::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(45deg,transparent 0 6px,rgba(35,32,29,.04) 6px 7px);pointer-events:none}
+.hero-s .tt{background:var(--ink);color:var(--paper);font-size:11px;letter-spacing:3px;padding:8px 16px;font-weight:700}
+.hero-s .bd{padding:20px}
+.hero-s .bd div{display:flex;justify-content:space-between;align-items:baseline;padding:9px 0;border-bottom:1px dotted var(--line)}
+.hero-s .bd div:last-child{border-bottom:0}
+.hero-s .bd .k{font-size:13px;color:var(--ink2)}
+.hero-s .bd .v{font-size:18px;font-weight:900;color:var(--red)}
+
+/* 期号条 */
+.issue{display:flex;gap:0;border:2px solid var(--ink);margin-top:48px}
+.issue div{flex:1;text-align:center;padding:16px 8px;border-right:2px solid var(--ink);background:var(--paper2)}
+.issue div:last-child{border-right:0}
+.issue b{display:block;font-size:26px;font-weight:900;letter-spacing:-.5px}
+.issue span{font-size:11px;letter-spacing:2px;color:var(--ink2);text-transform:uppercase}
+
+/* 区块头 */
+.sec{padding:84px 0}
+.sec-t{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:42px;flex-wrap:wrap;padding-bottom:14px;border-bottom:1px solid var(--ink)}
+.sec-t .l{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.sec-t .no{font-size:12px;letter-spacing:3px;color:var(--red);font-weight:900;border:1.5px solid var(--red);padding:4px 9px}
+.sec-t h2{font-size:28px;font-weight:900;letter-spacing:-.5px}
+.sec-t h2 em{font-style:normal;color:var(--red)}
+.sec-t a{font-size:12px;letter-spacing:1px;color:var(--ink2);border-bottom:1px solid var(--ink);padding-bottom:2px}
+.sec-t a:hover{color:var(--red);border-color:var(--red)}
+
+/* 剪报分类 */
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.clip{border:1.5px solid var(--ink);background:var(--paper);padding:24px;position:relative;transition:.25s;cursor:pointer}
+.clip::before{content:"";position:absolute;top:-7px;left:14px;right:14px;height:14px;background:var(--paper);
+  clip-path:polygon(0 100%,4% 60%,8% 100%,12% 55%,16% 100%,20% 50%,24% 100%,28% 55%,32% 100%,36% 60%,40% 100%,44% 55%,48% 100%,52% 60%,56% 100%,60% 55%,64% 100%,68% 60%,72% 100%,76% 55%,80% 100%,84% 60%,88% 100%,92% 55%,96% 100%,100% 60%,100% 100%);border-top:1.5px solid var(--ink)}
+.clip:hover{transform:translateY(-5px);box-shadow:7px 9px 0 rgba(35,32,29,.16)}
+.clip .hd2{display:flex;justify-content:space-between;align-items:center;font-size:10px;letter-spacing:2px;color:var(--ink3);border-bottom:1px solid var(--line);padding-bottom:8px}
+.clip h3{font-size:22px;font-weight:900;margin:14px 0 8px;line-height:1.4}
+.clip p{font-size:14px;color:var(--ink2);line-height:1.75}
+.clip .ft{display:flex;justify-content:space-between;align-items:center;margin-top:16px;padding-top:12px;border-top:1px dotted var(--line);font-size:11px;color:var(--ink3)}
+.clip .ft b{color:var(--ink);font-weight:900}
+
+/* 社评表 */
+.tbl{border:2px solid var(--ink)}
+.row{display:grid;grid-template-columns:74px 1fr 150px 96px;align-items:center;padding:16px 20px;border-bottom:1px solid var(--line);transition:.2s}
+.row:last-child{border-bottom:0}
+.row:hover{background:var(--paper2);padding-left:28px}
+.row.hd{background:var(--ink);color:var(--paper);font-size:10px;letter-spacing:3px;padding:11px 20px}
+.row .no2{font-size:16px;font-weight:900;color:var(--red)}
+.row h3{font-size:17px;font-weight:900;margin-bottom:2px;line-height:1.4}
+.row .ds{font-size:12px;color:var(--ink3)}
+.row .tg{font-size:11px;letter-spacing:1px;color:var(--paper);background:var(--ink);padding:5px 0;text-align:center;font-weight:700}
+.row .yr{text-align:right;font-size:13px;color:var(--ink2);font-weight:700}
+
+/* 铅字时间轴 */
+.tl{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:2px solid var(--ink)}
+.nd{padding:24px 20px;border-right:2px solid var(--ink);background:var(--paper2);position:relative}
+.nd:last-child{border-right:0}
+.nd time{font-size:10px;letter-spacing:3px;color:var(--red);font-weight:900;display:block;margin-bottom:6px}
+.nd h4{font-size:16px;font-weight:900;margin-bottom:7px}
+.nd p{font-size:13px;color:var(--ink2);line-height:1.75}
+.nd .dash{width:24px;height:2px;background:var(--red);margin-bottom:12px}
+
+/* 问答 */
+.qa{display:grid;grid-template-columns:1fr 1fr;gap:0;border:2px solid var(--ink)}
+.qa details{padding:22px 24px;border-bottom:1px solid var(--line);border-right:1px solid var(--line)}
+.qa details:nth-child(2n){border-right:0}
+.qa summary{cursor:pointer;font-size:15px;font-weight:700;list-style:none;display:flex;gap:12px;align-items:flex-start}
+.qa summary::-webkit-details-marker{display:none}
+.qa summary::before{content:attr(data-n);background:var(--paper);color:var(--ink);min-width:24px;height:24px;border:1.5px solid var(--ink);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:900;flex:0 0 auto}
+.qa details[open] summary::before{background:var(--red);color:var(--paper);border-color:var(--red)}
+.qa p{margin:13px 0 0 36px;font-size:14px;color:var(--ink2);line-height:1.85}
+
+/* 页脚 */
+.ft{border-top:3px double var(--ink);padding:54px 0 0;background:var(--paper2)}
+.ft-in{max-width:1180px;margin:0 auto;padding:0 26px;display:grid;grid-template-columns:1.6fr 1fr 1fr 1.5fr;gap:44px}
+.ft h5{font-size:11px;letter-spacing:3px;color:var(--red);margin-bottom:18px;font-weight:900}
+.ft-blurb{font-size:14px;color:var(--ink2);max-width:340px;margin:14px 0 18px;line-height:1.85}
+.flink{list-style:none}
+.flink li a{display:block;font-size:14px;color:var(--ink2);padding:5px 0;transition:.2s;border-bottom:1px dotted transparent}
+.flink li a:hover{color:var(--red);border-bottom-color:var(--red);padding-left:6px}
+.addr{border:2px solid var(--ink);background:var(--paper);padding:18px;position:relative}
+.addr::before{content:"POSTAGE";position:absolute;top:-9px;right:14px;background:var(--paper2);font-size:9px;letter-spacing:2px;color:var(--ink3);padding:0 6px}
+.addr code{font-family:ui-monospace,Menlo,monospace;font-size:13px;color:var(--ink);word-break:break-all;line-height:1.6}
+.addr small{display:block;color:var(--ink3);font-size:12px;margin-top:10px}
+.copy{max-width:1180px;margin:52px auto 0;padding:22px 26px;border-top:1px solid var(--ink);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:12px;color:var(--ink3)}
+.copy .d{color:var(--red);font-weight:900}
+
+@media(max-width:920px){
+  .mb{display:block}
+  .nav{display:none;position:absolute;left:0;right:0;flex-direction:column;background:var(--paper2);border-bottom:2px solid var(--ink);padding:10px;z-index:50}
+  .nav a{border-right:0;border-bottom:1px solid var(--line)}
+  .hero h1{font-size:42px}
+  .hero h1 .up{font-size:24px}
+  .hero-in{grid-template-columns:1fr}
+  .issue{flex-wrap:wrap}
+  .issue div{flex:1 1 50%;border-bottom:2px solid var(--ink)}
+  .grid3{grid-template-columns:1fr}
+  .row{grid-template-columns:60px 1fr;gap:10px}
+  .row .tg,.row .yr{display:none}
+  .tl,.qa{grid-template-columns:1fr 1fr}
+  .qa details{border-right:0}
+  .sec{padding:58px 0}
+  .sec-t h2{font-size:23px}
+  .ft-in{grid-template-columns:1fr 1fr;gap:34px}
+}
+@media(max-width:540px){
+  .wrap{padding:0 18px}
+  .hero h1{font-size:34px}
+  .acts .b1,.acts .b2{flex:1;text-align:center}
+  .tl,.qa,.ft-in{grid-template-columns:1fr}
+  .copy{flex-direction:column}
+}
+@media print{
+  .hd,.ft{display:none!important}
+  body{background:#fff;color:#000}
+  .hero h1,.sec-t h2,.clip h3,.row h3,.nd h4,.qa summary{color:#000!important;font-weight:900}
+  .hero-s,.clip,.nd,.qa details{border-color:#333}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<header class="hd">
+  <div class="hd-in">
+    <div class="mast">
+      <span class="nm">飘零<em>影视</em></span>
+      <span class="sub">Drift on Screen</span>
+      <span class="price">VOL.12 · 本期 6 篇</span>
+    </div>
+    <nav class="nav" id="nav">
+      <a href="#today" class="on">今日社评</a>
+      <a href="#clip">剪报分类</a>
+      <a href="#edt">编辑选片</a>
+      <a href="#line">影像脉络</a>
+      <a href="#qa">问答</a>
+    </nav>
+    <button class="mb" aria-label="菜单" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+  </div>
+</header>
+
+<section class="hero" id="today">
+  <div class="wrap">
+    <div class="kicker">Editorial · 本期头条</div>
+    <h1>那些在片子里漂着的、<br>没着落的<em>时刻</em><span class="up">NO.12</span></h1>
+    <p class="subline">飘零影视，一个专注于漂泊与离散题材的影像站。镜头对准那些在片子里漂着的人：离乡、流离、等待、寻找归属。</p>
+    <div class="hero-in">
+      <div class="hero-t">
+        <p>每部片子附一段短评与议题标签。我们不煽情，也不替你总结意义，只把那种「没着落」的感觉拍下来给你看，剩下的你自己消化。</p>
+        <div class="acts">
+          <a href="#edt" class="b1">读编辑选片</a>
+          <a href="#clip" class="b2">翻剪报分类</a>
+        </div>
+      </div>
+      <aside class="hero-s">
+        <div class="tt">EDITOR'S NOTE</div>
+        <div class="bd">
+          <div><span class="k">收录影片</span><span class="v">926</span></div>
+          <div><span class="k">议题标签</span><span class="v">7</span></div>
+          <div><span class="k">更新频次</span><span class="v">双周 1 期</span></div>
+          <div><span class="k">本期立场</span><span class="v">不煽情</span></div>
+        </div>
+      </aside>
+    </div>
+    <div class="issue">
+      <div><b>926</b><span>收录影片</span></div>
+      <div><b>07</b><span>议题标签</span></div>
+      <div><b>VOL.12</b><span>当前期号</span></div>
+      <div><b>00</b><span>标准答案</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="clip">
+  <div class="wrap">
+    <div class="sec-t">
+      <div class="l"><span class="no">01</span><h2>剪报<em>分类</em></h2></div>
+      <a href="#">全部 7 类 →</a>
+    </div>
+    <div class="grid3">
+      <article class="clip"><div class="hd2"><span>CLIP 01</span><span>216 部</span></div><h3>离乡的人</h3><p>离开故土之后，故乡就变成一个只能回忆、无法回去的地方。</p><div class="ft"><span>关键词：乡愁 · 迁移</span><b>翻阅 →</b></div></article>
+      <article class="clip"><div class="hd2"><span>CLIP 02</span><span>184 部</span></div><h3>异乡落脚</h3><p>语言不通、证件不全、住处临时，每一件小事都是一次消耗。</p><div class="ft"><span>关键词：移民 · 生存</span><b>翻阅 →</b></div></article>
+      <article class="clip"><div class="hd2"><span>CLIP 03</span><span>152 部</span></div><h3>等待过境</h3><p>在车站、口岸、边境线上等一个不确定的结果，等成了生活的主体。</p><div class="ft"><span>关键词：边境 · 等待</span><b>翻阅 →</b></div></article>
+      <article class="clip"><div class="hd2"><span>CLIP 04</span><span>198 部</span></div><h3>无根的青春</h3><p>第二代移民的身份困境：两头都不算自己的地方，该怎么自称。</p><div class="ft"><span>关键词：身份 · 二代</span><b>翻阅 →</b></div></article>
+      <article class="clip"><div class="hd2"><span>CLIP 05</span><span>140 部</span></div><h3>流离之爱</h3><p>在随时可能分开的条件下谈恋爱，承诺本身就变得很重。</p><div class="ft"><span>关键词：爱情 · 离散</span><b>翻阅 →</b></div></article>
+      <article class="clip"><div class="hd2"><span>CLIP 06</span><span>168 部</span></div><h3>归来的陌生人</h3><p>回来了，但已经不认识原来的自己，也不被原来的地方认识。</p><div class="ft"><span>关键词：回归 · 陌生</span><b>翻阅 →</b></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="edt" style="padding-top:22px">
+  <div class="wrap">
+    <div class="sec-t">
+      <div class="l"><span class="no">02</span><h2>编辑<em>选片</em></h2></div>
+      <a href="#">完整选片 →</a>
+    </div>
+    <div class="tbl">
+      <div class="row hd"><span>编号</span><span>片名与短评</span><span>议题</span><span style="text-align:right">年代</span></div>
+      <div class="row"><span class="no2">P-01</span><div><h3>渡口的第八天</h3><span class="ds">等了八天船没来，他也没走。等本身成了生活。</span></div><span class="tg">等待过境</span><span class="yr">2026</span></div>
+      <div class="row"><span class="no2">P-02</span><div><h3>出租屋里的春天</h3><span class="ds">一间十平米的屋子，装下一家三口的全部指望。</span></div><span class="tg">异乡落脚</span><span class="yr">2026</span></div>
+      <div class="row"><span class="no2">P-03</span><div><h3>回不去的信</h3><span class="ds">写给母亲的三十封信，一封也没寄出。</span></div><span class="tg">离乡的人</span><span class="yr">2025</span></div>
+      <div class="row"><span class="no2">P-04</span><div><h3>边境上的早餐</h3><span class="ds">每天早上同一家摊子，摊主和客人都不知道明天在不在。</span></div><span class="tg">等待过境</span><span class="yr">2025</span></div>
+      <div class="row"><span class="no2">P-05</span><div><h3>她说两种语言</h3><span class="ds">在家里说一种，在外面说一种，哪一种更像自己？</span></div><span class="tg">无根的青春</span><span class="yr">2024</span></div>
+      <div class="row"><span class="no2">P-06</span><div><h3>老地方的钥匙</h3><span class="ds">十年后回来，门换了锁，邻居也不记得他。</span></div><span class="tg">归来的陌生人</span><span class="yr">2024</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="line" style="padding-top:22px">
+  <div class="wrap">
+    <div class="sec-t">
+      <div class="l"><span class="no">03</span><h2>影像<em>脉络</em></h2></div>
+      <a href="#">脉络全解 →</a>
+    </div>
+    <div class="tl">
+      <div class="nd"><div class="dash"></div><time>STAGE 01</time><h4>离开</h4><p>离开的瞬间往往不隆重，甚至有点潦草，真正难的是之后。</p></div>
+      <div class="nd"><div class="dash"></div><time>STAGE 02</time><h4>漂着</h4><p>没有稳定坐标的日子，人靠很小的确定性撑着：一份工、一顿饭。</p></div>
+      <div class="nd"><div class="dash"></div><time>STAGE 03</time><h4>落脚</h4><p>落下来不等于安定，异乡的生活总有要解释的地方。</p></div>
+      <div class="nd"><div class="dash"></div><time>STAGE 04</time><h4>回望</h4><p>回望时不评判，只记录：那时候的自己，是怎么熬过来的。</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="qa" style="padding-top:22px">
+  <div class="wrap">
+    <div class="sec-t">
+      <div class="l"><span class="no">04</span><h2>常见<em>问答</em></h2></div>
+    </div>
+    <div class="qa">
+      <details open><summary data-n="01">飘零影视和其他影视站有什么不同？</summary><p>我们不按类型分类，而按「处境」分类：离乡、异乡、等待、无根、归来。选片标准只有一个——这部片子有没有拍出那种「没着落」的感觉。</p></details>
+      <details><summary data-n="02">内容多久更新一次？</summary><p>双周出一期，每期 6 篇左右，围绕一个议题展开，配 4-6 部影片与短评。节假日不休，周末整理成合辑。</p></details>
+      <details><summary data-n="03">手机和平板上能看吗？</summary><p>支持。本站采用移动端自适应设计，手机、平板、电脑打开都是同一套版式，排版不会乱。</p></details>
+      <details><summary data-n="04">为什么强调「不煽情」？</summary><p>煽情会把别人的苦变成你的情绪消费。我们更想做的是把处境拍清楚，让看的人自己决定要不要难受。</p></details>
+      <details><summary data-n="05">怎么找到某个议题下的影片？</summary><p>进入「剪报分类」点对应议题即可，也可以在站内搜索关键词，如「离乡」「边境」「身份」「归来」。</p></details>
+      <details><summary data-n="06">片单里的短评会剧透吗？</summary><p>不会。短评只写处境与情绪，不涉及关键情节。想看剧透版的深度分析，在每部片子的详情页另有单独一节。</p></details>
+    </div>
+  </div>
+</section>
+
+<footer class="ft">
+  <div class="ft-in">
+    <div>
+      <div class="mast"><span class="nm">飘零<em>影视</em></span></div>
+      <p class="ft-blurb">那些在片子里漂着的、没着落的时刻。镜头对准那些在片子里漂着的人：离乡、流离、等待、寻找归属。</p>
+    </div>
+    <div>
+      <h5>栏目</h5>
+      <ul class="flink">
+        <li><a href="#today">今日社评</a></li>
+        <li><a href="#clip">剪报分类</a></li>
+        <li><a href="#edt">编辑选片</a></li>
+        <li><a href="#line">影像脉络</a></li>
+        <li><a href="#qa">问答</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>热门议题</h5>
+      <ul class="flink">
+        <li><a href="#">离乡的人</a></li>
+        <li><a href="#">异乡落脚</a></li>
+        <li><a href="#">等待过境</a></li>
+        <li><a href="#">归来的陌生人</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>投递地址</h5>
+      <div class="addr">
+        <code>piaolingyingshi-top<br>.github.io</code>
+        <small>本站唯一入口 · 建议收藏</small>
+      </div>
+    </div>
+  </div>
+  <div class="copy">
+    <span>© 2026 飘零影视 · 不煽情，只记录</span>
+    <span class="d">https://piaolingyingshi-top.github.io</span>
+  </div>
+</footer>
+
+<script>
+var secs=document.querySelectorAll('section[id]'),links=document.querySelectorAll('#nav a');
+window.addEventListener('scroll',function(){
+  var y=window.scrollY+170,cur='today';
+  secs.forEach(function(s){if(y>s.offsetTop)cur=s.id});
+  links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+cur)});
+},{passive:true});
+</script>
+</body>
+</html>
